@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+mlxtend
+seaborn
+matplotlib
+charset-normalizer
+requests
+bs4
