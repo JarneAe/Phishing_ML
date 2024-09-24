@@ -1,13 +1,10 @@
-from urllib.parse import urlparse, urljoin
+import math
+import re
+from collections import Counter
+from urllib.parse import urlparse
 
 import pandas as pd
-import re
-import math
-from collections import Counter
-
-import requests
 import tldextract
-from bs4 import BeautifulSoup
 
 
 def ensure_http(url: str) -> str:
