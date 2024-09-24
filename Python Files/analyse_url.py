@@ -21,7 +21,7 @@ class URLAnalyzer:
     def __init__(self):
         self.url = None
 
-    def analyse_url(self, *urls):
+    def analyse_url(self, *urls, domain_age_days=-1):
         results = []
 
         for url in urls:
@@ -40,7 +40,7 @@ class URLAnalyzer:
             subdomain_count = self.__subdomain_count()
             nan_char_entropy = self.__nan_char_entropy()
             has_internal_links = tld_count > 0
-            domain_age_days = -1
+            domain_age_days = domain_age_days
 
             results.append(
                 [
