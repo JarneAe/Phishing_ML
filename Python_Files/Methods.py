@@ -1,4 +1,7 @@
+import numpy as np
 import pandas as pd
+from matplotlib import pyplot as plt
+from sklearn.feature_selection import mutual_info_classif
 
 
 def get_df_info(df: pd.DataFrame) -> pd.DataFrame:
@@ -40,3 +43,19 @@ def get_df_info(df: pd.DataFrame) -> pd.DataFrame:
     print(descriptive_stats)
 
     return descriptive_stats
+
+
+def make_mi_scores(X, y, discrete_features):
+    mi_scores = mutual_info_classif(X, y, discrete_features=discrete_features)
+    mi_scores = pd.Series(mi_scores, name='MI Scores', index=X.columns)
+    mi_scores = mi_scores.sort_values(ascending=False)
+    return mi_scores
+
+
+def plot_mi_scores(scores):
+    scores = scores.sort_values(ascending=True)
+    width = np.arange(len(scores))
+    ticks = list(scores.index)
+    plt.barh(width, scores)
+    plt.yticks(width, ticks)
+    plt.title("Mutual Information Scores")
