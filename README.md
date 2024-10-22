@@ -2,6 +2,11 @@
 
 Kindercarnavalsoptochtvoorbereidingswerkzaamhedencomitéleden
 
+## Preperation
+```bash
+pip install -rU requirements.txt
+```
+
 ## Table of content
 
 ### Data preprocessing
