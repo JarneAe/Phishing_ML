@@ -3,6 +3,7 @@
 Kindercarnavalsoptochtvoorbereidingswerkzaamhedencomitéleden
 
 ## Preperation
+
 ```bash
 pip install -rU requirements.txt
 ```
@@ -20,5 +21,5 @@ pip install -rU requirements.txt
 ### Model Evaluation & Hyperparameter Tuning
 
 1. [Model evaluation](Notebooks/Model_Building_and_Evaluation.ipynb)
-2. [Model Selection](Notebooks/)
-3. [Hyperparameter Tuning](Notebooks/)
+2. [Hyperparameter Tuning](Notebooks/HyperParamater_Tuning.ipynb)
+3. [Model Selection](Notebooks/)
