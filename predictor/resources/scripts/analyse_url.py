@@ -83,7 +83,7 @@ class URLAnalyzer:
 
     def __starts_with_ip(self) -> bool:
         # regex for IP pattern
-        ip_pattern = r'^http[s]?://(\d{1,3}\.){3}\d{1,3}'
+        ip_pattern = r'(^http[s]?://)?(\d{1,3}\.){3}\d{1,3}'
 
         # Check url for IP
         return re.match(ip_pattern, self.url) is not None
@@ -111,7 +111,7 @@ class URLAnalyzer:
         return self.url.count(char)
 
     def __subdomain_count(self) -> int:
-        parsed_url = urlparse(self.url)
+        parsed_url = urlparse(ensure_http(self.url))
         hostname = parsed_url.hostname
         if hostname:
             segments = hostname.split('.')
