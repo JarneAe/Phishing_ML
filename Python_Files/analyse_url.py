@@ -18,7 +18,7 @@ class URLAnalyzer:
     def __init__(self):
         self.url = None
 
-    def analyse_url(self, *urls, domain_age_days=-1):
+    def analyse_url(self, *urls, domain_age_days=0):
         results = []
 
         for url in urls:

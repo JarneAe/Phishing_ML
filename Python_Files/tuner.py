@@ -1,6 +1,7 @@
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import cross_val_score
+import joblib
 
 
 class Tuner:
@@ -53,3 +54,6 @@ class Tuner:
                                           model_type='Best')
         else:
             raise Exception
+
+    def save_best_model(self, model_path):
+        joblib.dump(self.best_model, model_path)
