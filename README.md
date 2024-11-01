@@ -63,10 +63,12 @@ python.exe predict.py example.org
 
 When ran the predict file will return if it thinks the url is phishing or legitimate.
 This is an example output the prediction file will give:
+
 ![img_1.png](img_1.png)
-The first line is the input you gave to the prediction file (running the file)
-The second line is what label the model thinks the url has.
-The last line is how certain the model is about this choice.
+
+- The first line is the input you gave to the prediction file (running the file)
+- The second line is what label the model thinks the url has.
+- The last line is how certain the model is about this choice.
 
 ### Note
 
