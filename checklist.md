@@ -14,7 +14,7 @@ Build machine learning models for the dataset. You can choose your own target va
 - [ ] **Model Evaluation**: evaluate the performance of the machine learning algorithms, use appropriate metrics, and validation techniques.
 - [ ] **Model Selection**: explore the best models for your dataset. Compare the models using cross validation. Record your progress. It is not forbidden to apply techniques not seen in this course, but deep learning techniques are not allowed (see T2 for deep learning assignment)
 - [ ] **TIP**: ensemble methods can be very useful to improve the overall performance.
-- [ ] **Hyperparameter Tuning**: tune the hyperparameters of the models using search methods.
+- [x] **Hyperparameter Tuning**: tune the hyperparameters of the models using search methods.
 
 Remember modelling is an iterative process, we try over and over again with other models and other hyper parameters to come up in the end with the best result. Start with a simple model and improve step by step by applying more sophisticated models on the data. Do not leave out the simple models. We need to see the whole process!
 
