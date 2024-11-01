@@ -22,7 +22,7 @@ pip install -rU requirements.txt
 
 1. [Model evaluation](Notebooks/Model_Building_and_Evaluation.ipynb)
 2. [Hyperparameter Tuning](Notebooks/HyperParamater_Tuning.ipynb)
-3. [Model Selection](Notebooks/Model_Selection.ipynb)
+3. [Model Selection](Notebooks/HyperParamater_Tuning.ipynb)
 
 ## How to use the predictor?
 
