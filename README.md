@@ -1,6 +1,5 @@
 # Data Exploration & Modelling
 
-Kindercarnavalsoptochtvoorbereidingswerkzaamhedencomitéleden
 
 ## Preperation
 
