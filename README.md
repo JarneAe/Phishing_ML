@@ -1,5 +1,6 @@
 # Data Exploration & Modelling
 
+MACHINE LEARNING PROJECT MADE IN MY 3RD YEAR @ KdG applied computer science for our AI class
 
 ## Preperation
 
